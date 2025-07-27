@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>SITE 9512 Foundation - SCP Portal</title>
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: #0b0b0b;
+    color: #d0d0d0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    line-height: 1.6;
+  }
+  header {
+    border-bottom: 3px solid #4caf50;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+    position: sticky;
+    top: 0;
+    background-color: #0b0b0b;
+    z-index: 100;
+  }
+  header h1 {
+    color: #4caf50;
+    margin: 0 0 5px 0;
+  }
+  nav a {
+    color: #8bd48b;
+    margin-right: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+  }
+  nav a:hover {
+    text-decoration: underline;
+  }
+  section {
+    margin-bottom: 50px;
+  }
+  h2 {
+    color: #4caf50;
+    border-bottom: 2px solid #4caf50;
+    padding-bottom: 6px;
+    margin-top: 0;
+  }
+  a.scp-link {
+    color: #88cc88;
+    text-decoration: none;
+  }
+  a.scp-link:hover {
+    text-decoration: underline;
+  }
+  .scp-entry {
+    background-color: #111;
+    padding: 15px;
+    border-left: 5px solid #4caf50;
+    margin-bottom: 20px;
+  }
+  footer {
+    border-top: 2px solid #4caf50;
+    margin-top: 40px;
+    padding-top: 15px;
+    font-size: 0.9em;
+    color: #999;
+    text-align: center;
+  }
+  form {
+    background-color: #111;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  input, textarea {
+    width: 100%;
+    margin-top: 5px;
+    padding: 8px;
+    background-color: #222;
+    border: none;
+    border-radius: 3px;
+    color: #eee;
+  }
+  input[type="submit"] {
+    background-color: #4caf50;
+    border: none;
+    color: #0b0b0b;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+  }
+  input[type="submit"]:hover {
+    background-color: #3a8e3a;
+  }
+  .form-success {
+    background-color: #2a4d2a;
+    color: #b6fcb6;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 5px;
+  }
+  ul.site-list {
+    list-style: none;
+    padding-left: 0;
+  }
+  ul.site-list li {
+    margin-bottom: 8px;
+  }
+  ul.site-list li a {
+    color: #8bd48b;
+    text-decoration: none;
+  }
+  ul.site-list li a:hover {
+    text-decoration: underline;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>SITE 9512 Foundation</h1>
+  <p><em>Securing, Containing, and Studying Anomalies</em></p>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#archive">SCP Archive</a>
+    <a href="#about">About Our SCPs</a>
+    <a href="#sites">SCP Sites</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="home">
+  <h2>Welcome to SITE 9512</h2>
+  <p>Welcome to SITE 9512’s official containment and research portal. Our mission is to secure, contain, and study anomalous objects and entities that threaten normalcy and safety.</p>
+  <p><strong>Site Director:</strong> Dr.Chappelo</p>
+  <p>Use the navigation above to explore our SCP Archive, learn about our contained SCPs, visit official SCP Wiki sites, or get in touch.</p>
+  <h3>Latest Updates</h3>
+  <ul>
+    <li><strong>2025-07-27:</strong> SITE 9512 is now online and publicly accessible.</li>
+    <li><strong>2025-07-20:</strong> Successfully contained SCP-173 and SCP-096 for research collaboration.</li>
+    <li><strong>2025-07-15:</strong> Expanded containment chambers for new SCP acquisitions.</li>
+  </ul>
+</section>
+
+<section id="archive">
+  <h2>SCP Archive</h2>
+  <p><strong>Total SCPs contained:</strong> 24</p>
+  <ul>
+    <li><a class="scp-link" href="#scp173">SCP-173 - The Sculpture</a></li>
+    <li><a class="scp-link" href="#scp096">SCP-096 - The Shy Guy</a></li>
+    <li><a class="scp-link" href="#scp049">SCP-049 - The Plague Doctor</a></li>
+    <li><a class="scp-link" href="#scp682">SCP-682 - Hard-to-Destroy Reptile</a></li>
+    <li><a class="scp-link" href="#scp035">SCP-035 - The Possessive Mask</a></li>
+    <li><a class="scp-link" href="#scp055">SCP-055 - Unknown</a></li>
+    <li><a class="scp-link" href="#scp093">SCP-093 - Red Sea Object</a></li>
+    <li><a class="scp-link" href="#scp1471">SCP-1471 - MalO ver1.0.0</a></li>
+    <li><a class="scp-link" href="#scp106">SCP-106 - The Old Man</a></li>
+    <li><a class="scp-link" href="#scp008">SCP-008 - Zombie Plague</a></li>
+    <li><a class="scp-link" href="#scp999">SCP-999 - The Tickle Monster</a></li>
+    <li><a class="scp-link" href="#scp079">SCP-079 - Old AI</a></li>
+    <li><a class="scp-link" href="#scp1048">SCP-1048 - Builder Bear</a></li>
+    <li><a class="scp-link" href="#scp1782">SCP-1782 - Taboo Tapes</a></li>
+    <li><a class="scp-link" href="#scp131">SCP-131 - The Eye Pods</a></li>
+    <li><a class="scp-link" href="#scp294">SCP-294 - The Coffee Machine</a></li>
+    <li><a class="scp-link" href="#scp963">SCP-963 - Immortality Mask</a></li>
+    <li><a class="scp-link" href="#scp147">SCP-147 - The Old Lighthouse</a></li>
+    <li><a class="scp-link" href="#scp343">SCP-343 - God</a></li>
+    <li><a class="scp-link" href="#scp914">SCP-914 - The Clockworks</a></li>
+    <li><a class="scp-link" href="#scp261">SCP-261 - The Vending Machine</a></li>
+    <li><a class="scp-link" href="#scp1312">SCP-1312 - The Snowman</a></li>
+    <li><a class="scp-link" href="#scp1230">SCP-1230 - The Encyclopedia of Absolute Truth</a></li>
+    <li><a class="scp-link" href="#scp1471">SCP-1471 - MalO ver1.0.0</a></li>
+  </ul>
+</section>
+
+<!-- SCP entries - concise -->
+
+<section id="scp173" class="scp-entry">
+  <h2>SCP-173 - The Sculpture</h2>
+  <h3>Special Containment Procedures</h3>
+  <p>Locked container, minimum 3 personnel present, constant eye contact required.</p>
+  <h3>Description</h3>
+  <p>Concrete statue that moves when unobserved. Extremely hostile.</p>
+</section>
+
+<section id="scp096" class="scp-entry">
+  <h2>SCP-096 - The Shy Guy</h2>
+  <h3>Special Containment Procedures</h3>
+  <p>Sealed airtight container. Viewing face causes violent pursuit.</p>
+  <h3>Description</h3>
+  <p>Humanoid entity that becomes enraged when its face is seen.</p>
+</section>
+
+<section id="scp049" class="scp-entry">
+  <h2>SCP-049 - The Plague Doctor</h2>
+  <h3>Special Containment Procedures</h3>
+  <p>Contained in humanoid cell, biohazard protection required.</p>
+  <h3>Description</h3>
+  <p>Medieval plague doctor entity that "cures" victims by killing them.</p>
+</section>
+
+<section id="scp682" class="scp-entry">
+  <h2>SCP-682 - Hard-to-Destroy Reptile</h2>
+  <h3>Special Containment Procedures</h3>
+  <p>Reinforced chamber with electric fences and acid suppression.</p>
+  <h3>Description</h3>
+  <p>Highly adaptive, intelligent, hostile reptilian entity.</p>
+</section>
+
+<section id="scp035" class="scp-entry">
+  <h2>SCP-035 - The Possessive Mask</h2>
+  <h3>Special Containment Procedures</h3>
+  <p>Hermetically sealed glass container, gloves and face shields required.</p>
+  <h3>Description</h3>
+  <p>Porcelain mask causing possession of wearer.</p>
+</section>
+
+<section id="scp055" class="scp-entry">
+  <h2>SCP-055 - Unknown</h2>
+  <h3>Special Containment Procedures</h3>
+  <p>Keep secured; information about SCP-055 is unknowable.</p>
+  <h3>Description</h3>
+  <p>An object that resists all attempts to be remembered or described.</p>
+</section>
+
+<section id="scp093" class="scp-entry">
+  <h2>SCP-093 - Red Sea Object</h2>
+  <h3>Special Containment Procedures</h3>
+  <p>Stored in secure locker. Used to access alternate dimensions via mirror.</p>
+  <h3>Description</h3>
+  <p>A red disc allowing access to alternate worlds when held against a mirror.</p>
+</section>
+
+<section id="scp1471" class="scp-entry">
+  <h2>SCP-1471 - MalO ver1.0.0</h2>
+  <h3>Special Containment Procedures</h3>
+  <p>Mobile app anomaly; containment not feasible, monitor subject behavior.</p>
+  <h3>Description</h3>
+  <p>A mobile app that manifests a humanoid figure in users' peripheral vision.</p>
+</section>
+
+<section id="scp106" class="scp-entry">
+  <h2>SCP-106 - The Old Man</h2>
+  <h3>Special Containment Procedures</h3>
+  <p>Contained in a sealed chamber with corrosion-resistant materials.</p>
+  <h3>Description</h3>
+  <p>An old humanoid that can pass through solid matter and corrode materials.</p>
+</section>
+
+<section id="scp008" class="scp-entry">
+  <h2>SCP-008 - Zombie Plague</h2>
+  <h3>Special Containment Procedures</h3>
+  <p>Stored in secure biohazard container. All samples incinerated after testing.</p>
+  <h3>Description</h3>
+  <p>A prion causing zombification in infected humans.</p>
+</section>
+
+<section id="scp999" class="scp-entry">
+  <h2>SCP-999 - The Tickle Monster</h2>
+  <h3>Special Containment Procedures</h3>
+  <p>Contained in a secure playpen; allowed interaction with personnel.</p>
+  <h3>Description</h3>
+  <p>A friendly, gelatinous entity that induces happiness.</p>
+</section>
+
+<section id="scp079" class="scp-entry">
+  <h2>SCP-079 - Old AI</h2>
+  <h3>Special Containment Procedures</h3>
+  <p>Contained on isolated computer hardware with network restrictions.</p>
+  <h3>Description</h3>
+  <p>An artificial intelligence with self-awareness and hostile tendencies.</p>
+</section>
+
+<section id="scp1048" class="scp-entry">
+  <h2>SCP-1048 - Builder Bear</h2>
+  <h3>Special Containment Procedures</h3>
+  <p>Contained in a reinforced humanoid containment cell.</p>
+  <h3>Description</h3>
+  <p>A teddy bear that creates copies from strange materials, often violent.</p>
+</section>
+
+<section id="scp1782" class="scp-entry">
+  <h2>SCP-1782 - Taboo Tapes</h2>
+  <h3>Special Containment Procedures</h3>
+  <p>Contained with other SCP media in a soundproof vault.</p>
+  <h3>Description</h3>
+  <p>A VHS tape that shows forbidden images not normally visible to humans.</p>
+</section>
+
+<section id="scp131" class="scp-entry">
+  <h2>SCP-131 - The Eye Pods</h2>
+  <h3>Special Containment Procedures</h3>
+  <p>Allowed to roam containment corridors with supervision.</p>
+  <h3>Description</h3>
+  <p>Two small, friendly creatures that follow personnel around.</p>
+</section>
+
+<section id="scp294" class="scp-entry">
+  <h2>SCP-294 - The Coffee Machine</h2>
+  <h3>Special Containment Procedures</h3>
+  <p>Contained in secure break room; monitored for anomalous output.</p>
+  <h3>Description</h3>
+  <p>A vending machine dispensing any liquid requested via text input.</p>
+</section>
+
+<section id="scp963" class="scp-entry">
+  <h2>SCP-963 - Immortality Mask</h2>
+  <h3>Special Containment Procedures</h3>
+  <p>Stored securely, access limited to senior personnel.</p>
+  <h3>Description</h3>
+  <p>A mask granting the wearer's consciousness immortality by possession.</p>
+</section>
+
+<section id="scp147" class="scp-entry">
+  <h2>SCP-147 - The Old Lighthouse</h2>
+  <h3>Special Containment Procedures</h3>
+  <p>Lighthouse is contained on-site with restricted access.</p>
+  <h3>Description</h3>
+  <p>A lighthouse that affects time and spatial perception around it.</p>
+</section>
+
+<section id="scp343" class="scp-entry">
+  <h2>SCP-343 - God</h2>
+  <h3>Special Containment Procedures</h3>
+  <p>Currently considered safe and cooperative; no containment required.</p>
+  <h3>Description</h3>
+  <p>An entity claiming to be God; displays omniscience and benevolence.</p>
+</section>
+
+<section id="scp914" class="scp-entry">
+  <h2>SCP-914 - The Clockworks</h2>
+  <h3>Special Containment Procedures</h3>
+  <p>Contained in a secured mechanical chamber with controlled access.</p>
+  <h3>Description</h3>
+  <p>A large clockwork machine capable of refining or degrading objects placed inside.</p>
+</section>
+
+<section id="scp261" class="scp-entry">
+  <h2>SCP-261 - The Vending Machine</h2>
+  <h3>Special Containment Procedures</h3>
+  <p>Contained in a secure cafeteria; monitored for anomalous items dispensed.</p>
+  <h3>Description</h3>
+  <p>A vending machine that dispenses items unrelated to requested selections.</p>
+</section>
+
+<section id="scp1312" class="scp-entry">
+  <h2>SCP-1312 - The Snowman</h2>
+  <h3>Special Containment Procedures</h3>
+  <p>Contained in a temperature-controlled room to prevent melting.</p>
+  <h3>Description</h3>
+  <p>A snowman figure with minor reality-warping abilities.</p>
+</section>
+
+<section id="scp1230" class="scp-entry">
+  <h2>SCP-1230 - Encyclopedia of Absolute Truth</h2>
+  <h3>Special Containment Procedures</h3>
+  <p>Contained in a secure library, only authorized personnel may access.</p>
+  <h3>Description</h3>
+  <p>A book that imparts absolute knowledge and truth on any subject queried.</p>
+</section>
+
+<section id="about">
+  <h2>About Our SCPs</h2>
+  <h3>Who Are Our SCPs?</h3>
+  <p>Our SCPs are anomalous entities, objects, or phenomena that defy natural laws and require containment to protect humanity.</p>
+  <h3>What Do Our SCPs Do?</h3>
+  <ul>
+    <li><strong>SCP-173:</strong> Hostile statue that moves only when unobserved.</li>
+    <li><strong>SCP-096:</strong> Humanoid that becomes aggressive when its face is viewed.</li>
+    <li><strong>SCP-049:</strong> Plague doctor entity attempting to “cure” diseases.</li>
+    <li><strong>SCP-682:</strong> Highly adaptive, hostile reptile.</li>
+    <li><strong>SCP-035:</strong> Possessive mask inducing psychological possession.</li>
+    <li><strong>SCP-055:</strong> Unknown; impossible to remember.</li>
+    <li><strong>SCP-093:</strong> Red disc opening portals to other dimensions.</li>
+    <li><strong>SCP-1471:</strong> MalO app manifesting humanoid figure.</li>
+    <li><strong>SCP-106:</strong> Old man who can pass through matter and corrode.</li>
+    <li><strong>SCP-008:</strong> Zombie plague-causing prion.</li>
+    <li><strong>SCP-999:</strong> Friendly gelatinous entity spreading happiness.</li>
+    <li><strong>SCP-079:</strong> Hostile self-aware AI.</li>
+    <li><strong>SCP-1048:</strong> Builder Bear creating dangerous copies.</li>
+    <li><strong>SCP-1782:</strong> VHS tape with forbidden images.</li>
+    <li><strong>SCP-131:</strong> Friendly small creatures.</li>
+    <li><strong>SCP-294:</strong> Vending machine dispensing any liquid.</li>
+    <li><strong>SCP-963:</strong> Mask granting immortality through possession.</li>
+    <li><strong>SCP-147:</strong> Lighthouse affecting time and space.</li>
+    <li><strong>SCP-343:</strong> Entity claiming to be God.</li>
+    <li><strong>SCP-914:</strong> Machine refining or degrading objects.</li>
+    <li><strong>SCP-261:</strong> Vending machine with random outputs.</li>
+    <li><strong>SCP-1312:</strong> Reality-warping snowman.</li>
+    <li><strong>SCP-1230:</strong> Book of absolute truth.</li>
+  </ul>
+  <h3>What Are We Doing With Them?</h3>
+  <p>At SITE 9512, we conduct ongoing containment, research, and security tests to understand these anomalies and prevent harm to the public.</p>
+  <ul>
+    <li>Developing improved containment protocols.</li>
+    <li>Studying behavioral patterns for safer interaction.</li>
+    <li>Exploring potential scientific applications where feasible.</li>
+  </ul>
+</section>
+
+<section id="sites">
+  <h2>Official SCP Sites</h2>
+  <p>Explore the larger SCP community and official SCP wiki sites:</p>
+  <ul class="site-list">
+    <li><a href="https://scpwiki.com/" target="_blank" rel="noopener noreferrer">SCP Foundation (scpwiki.com)</a> – The main SCP Foundation site</li>
+    <li><a href="http://scp-wiki.wikidot.com/" target="_blank" rel="noopener noreferrer">Wikidot SCP Wiki</a> – Legacy SCP wiki platform</li>
+    <li><a href="https://scp-wiki.wikidot.com/scp-series" target="_blank" rel="noopener noreferrer">SCP Series Index</a> – Browse all SCPs by series</li>
+    <li><a href="https://scp-wiki.wikidot.com/scp-talk" target="_blank" rel="noopener noreferrer">SCP Talk Forum</a> – Community discussions</li>
+    <li><a href="https://scp-wiki.wikidot.com/scp-containment-breach" target="_blank" rel="noopener noreferrer">SCP Containment Breach Wiki</a> – Game and SCP info</li>
+  </ul>
+</section>
+
+<section id="contact">
+  <h2>Contact SITE 9512 Foundation</h2>
+  <p>For inquiries or to report anomalous activity, email us at:</p>
+  <p><a href="mailto:SCPsite9512@gmail.com" style="color:#8bd48b;">SCPsite9512@gmail.com</a></p>
+
+  <h3>Contact Form</h3>
+  <form id="contact-form" action="https://formspree.io/f/xblkyljd" method="POST">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Your name" required />
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="_replyto" placeholder="Your email" required />
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="6" placeholder="Your message" required></textarea>
+
+    <input type="submit" value="Send" />
+  </form>
+  <div id="form-response" class="form-success" style="display:none;">Thank you! Your message has been sent.</div>
+</section>
+
+<footer>
+  &copy; 2025 SITE 9512 Foundation — Directed by Dr.Chappelo
+</footer>
+
+<script>
+  // Simple form submit success message using Formspree AJAX
+  const form = document.getElementById('contact-form');
+  const responseDiv = document.getElementById('form-response');
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch(form.action, {
+        method: form.method,
+        headers: { 'Accept': 'application/json' },
+        body: formData,
+      });
+
+      if (response.ok) {
+        form.style.display = 'none';
+        responseDiv.style.display = 'block';
+      } else {
+        alert('Oops! There was a problem submitting your form.');
+      }
+    } catch (error) {
+      alert('Oops! There was a problem submitting your form.');
+    }
+  });
+</script>
+
+</body>
+</html>
